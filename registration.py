@@ -49,6 +49,8 @@ def User_Registration():
     f = open("registration_details.txt", 'w')
     info = info + " " + user_name + " " + password
     f.write(info)
+    f.close()
+    User_options()
 
 #method to get the user requested password based on the info provided
 def Forget_password():
